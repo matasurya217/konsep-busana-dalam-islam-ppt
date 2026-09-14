@@ -89,7 +89,7 @@ export default function Slide1({ isActive, direction }) {
             <span className="block text-accent mb-1 text-xs uppercase">Kelompok 1</span>
             Miftah Rahman Hakim<br />
             Muhhammad Pratama Dermawan<br />
-            muchamad Rizqy kurniawan
+            Muchamad Rizqy kurniawan
           </div>
 
           <div className="text-center sm:text-left sm:ml-1 normal-case">
