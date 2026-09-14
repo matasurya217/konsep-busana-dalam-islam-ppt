@@ -47,7 +47,7 @@
 
 /* Islamic Card */
 .islamic-card {
-  @apply bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-[0_4px_20px_-4px_rgba(26, 60, 40, 0.05)] border border-primary/5 relative overflow-hidden transition-all duration-500 z-10;
+  @apply bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-[0_4px_20px_-4px_rgba(26,60,40,0.05)] border border-primary/5 relative overflow-hidden transition-all duration-500 z-10;
 }
 
 .islamic-card::before {
@@ -56,7 +56,7 @@
 }
 
 .islamic-card:hover {
-  @apply shadow-[0_8px_30px_-4px_rgba(26, 60, 40, 0.1)] border-primary/10 bg-white;
+  @apply shadow-[0_8px_30px_-4px_rgba(26,60,40,0.1)] border-primary/10 bg-white;
 }
 
 .islamic-card:hover::before {
