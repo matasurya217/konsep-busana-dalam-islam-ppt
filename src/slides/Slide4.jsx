@@ -6,7 +6,7 @@ export default function Slide4({ isActive, direction }) {
     {
       title: "Menutup Aurat",
       subtitle: "QS. Al-Ahzab: 59",
-      desc: "Menutup aurat agar dikenali dan terjaga."
+      desc: "Menutup aurat (menggunakan hijab) agar dikenali dan terjaga."
     },
     {
       title: "Niat Karena Allah",
