@@ -13,7 +13,7 @@
 /* Custom styles for subtle Islamic geometric background */
 .pattern-bg {
   background-color: #f9f6f0;
-  background-image: 
+  background-image:
     linear-gradient(30deg, rgba(26, 60, 40, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(26, 60, 40, 0.02) 87.5%, rgba(26, 60, 40, 0.02)),
     linear-gradient(150deg, rgba(26, 60, 40, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(26, 60, 40, 0.02) 87.5%, rgba(26, 60, 40, 0.02)),
     linear-gradient(30deg, rgba(26, 60, 40, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(26, 60, 40, 0.02) 87.5%, rgba(26, 60, 40, 0.02)),
@@ -34,9 +34,11 @@
   content: '';
   @apply absolute w-16 h-16 border-accent/30 opacity-70 pointer-events-none transition-opacity duration-1000 z-0;
 }
+
 .slide-container::before {
   @apply top-8 left-8 border-t border-l;
 }
+
 .slide-container::after {
   @apply bottom-8 right-8 border-b border-r;
 }
@@ -45,15 +47,18 @@
 
 /* Islamic Card */
 .islamic-card {
-  @apply bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-[0_4px_20px_-4px_rgba(26,60,40,0.05)] border border-primary/5 relative overflow-hidden transition-all duration-500 z-10;
+  @apply bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-[0_4px_20px_-4px_rgba(26, 60, 40, 0.05)] border border-primary/5 relative overflow-hidden transition-all duration-500 z-10;
 }
+
 .islamic-card::before {
   content: '';
   @apply absolute inset-[3px] border border-accent/10 rounded-lg pointer-events-none transition-colors duration-500;
 }
+
 .islamic-card:hover {
-  @apply shadow-[0_8px_30px_-4px_rgba(26,60,40,0.1)] border-primary/10 bg-white;
+  @apply shadow-[0_8px_30px_-4px_rgba(26, 60, 40, 0.1)] border-primary/10 bg-white;
 }
+
 .islamic-card:hover::before {
   @apply border-accent/30;
 }
@@ -86,4 +91,68 @@
 
 .arabic-text {
   @apply font-arabic text-3xl md:text-4xl leading-loose text-primary text-right;
+}
+
+/* KHUSUS PERBAIKAN SLIDE 1 MOBILE LANDSCAPE */
+@media screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape) {
+  .slide1-landscape-fix-root {
+    min-height: 100% !important;
+    justify-content: center !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .slide1-landscape-fix-content {
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    gap: 0.5rem !important;
+  }
+
+  .slide1-landscape-fix-title1 {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .slide1-landscape-fix-title2 {
+    font-size: 1.25rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .slide1-landscape-fix-line {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .slide1-landscape-fix-subject-wrap {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .slide1-landscape-fix-subject {
+    font-size: 0.75rem !important;
+  }
+
+  .slide1-landscape-fix-quote {
+    font-size: 0.875rem !important;
+    line-height: 1.25 !important;
+    margin-top: 0 !important;
+    max-width: 95% !important;
+  }
+
+  .slide1-landscape-fix-footer {
+    position: static !important;
+    margin-top: 0.5rem !important;
+    gap: 1rem !important;
+    flex-direction: row !important;
+  }
+
+  .slide1-landscape-fix-footer>div {
+    font-size: 0.65rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .slide1-landscape-fix-footer span.text-xs {
+    font-size: 0.65rem !important;
+    margin-bottom: 0.125rem !important;
+  }
 }
